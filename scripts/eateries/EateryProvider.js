@@ -1,5 +1,3 @@
-console.log("EateryProvider.js")
-
 let eatery = [];
 
 export const useEatery = () => eatery.slice();
