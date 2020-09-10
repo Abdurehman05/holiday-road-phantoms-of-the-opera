@@ -1,7 +1,10 @@
-export const parkHTML = (parkObj) => {
+
+export const ParksHTML = parksObject => {
     return `
-    <section class="National-Parks${parksObj.name}" id="parks-list">
-    <h3>Name: ${parksObj.name}</h3>
+    <section id="parks${parksObject}" class="parks-card">
+    <h3>Name: ${parksObject}</h3>
     </section>
     `
 }
+
+

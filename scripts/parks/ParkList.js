@@ -1,21 +1,14 @@
-import { parkHTML } from "./Park.js";
-import { useParks, getParks } from "./ParkProvider.js";
 
-export const parksList = () => {
-    getParks()
-    .then(() => {
-        const parksArray = useParks();
-        addParksToDOM(parksArray);
-    })
-}
+import { ParksHTML } from "./Park.js";
+import { getParks, useParks } from "./ParkProvider.js";
 
-const addParksToDOM = (allParksArray) => {
-    const domElement = document.querySelector(".National-ParksContainer")
+const eventHub = document.querySelector(".container");
 
-}
 
-let HTMLArray = allParksArray.map(singlePark => {
-    return parkHTML(singlePark);
-    })
 
-    domElement.innerHTML = HTMLArray.join("");
+
+
+
+
+
+
