@@ -1,10 +1,12 @@
+console.log("EaterySelect.js");
+
 import { useEatery, getEatery } from "./EateryProvider.js"
 
 //creates a variable named eventHub and attaches it to the "container" class in the main portion of index.html
 const eventHub = document.querySelector(".container")
 
 //creates a variable named contentTarget and attaches it to the "Eateries" class in index.html
-const contentTarget = document.querySelector(".Eateries")
+const contentTarget = document.querySelector(".EateriesContainer")
 
 //Attaches an eventlistener to the eventhub. The eventlistener listens for a change in the eaterySelect element and then dispatches the value that the user selects to the eventhub
 eventHub.addEventListener("change", event => {

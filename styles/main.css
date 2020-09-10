@@ -1,24 +1,85 @@
 body {
-    background-color: whitesmoke;
+    background-color: #786141
 }
 
-
-.img {
-
-}
-h2 {
-    text-align: center;
-    color: whitesmoke;
-    border: solid orangered;
-    background-color: orangered;
-    margin: .05em;
-    padding: .05em;
-    
-}    
- 
-    
-.parksContainer {
+header {
     display: flex;
-    flex: 3;
-    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: center;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: #7e9947;
+    color: white;
+}
+
+.logo {
+    width: 75px;
+    height: 90px;
+    margin-right: 10em;
+    margin-top: 1.2em;
+}
+
+.welcome {
+    font-size: 40pt;
+   
+}
+
+.dropdown {
+    display: flex;
+    flex-flow: row;
+    Justify-Content: space-around;
+    margin-top: 1em;
+    border-radius: 20px;
+    height: 3em;
+}
+
+.display {
+    display: flex;
+    flex-flow: row;
+    Justify-Content: flex-start;
+    margin-top: 2em;
+}
+
+.eateryPreview {
+    color: white;
+}
+
+.Itinerary-Display {
+    background-color: blue;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    width: 73em;
+    height: 45em;
+    margin-left: 5em;
+    
+}
+
+.aside {
+    background-color: yellow;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    width: 32em;
+    height: 45em;
+    margin-left: 3em;
+}
+
+.buttons {
+    margin-top: 2em;
+}
+
+.Save-Itinerary {
+    height: 3em;
+    width: 15em;
+    margin-left: 5em;
+    font-size: 12pt;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    font-size: 18pt;
+    color: white;
 }
