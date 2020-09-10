@@ -1,13 +1,18 @@
-let parks = []
+
+import Settings from "../Settings.js"
+
+let nationalParks = [];
 
 export const useParks = () => {
-    return parks.slice()
+    return nationalParks.slice();
 }
 
 export const getParks = () => {
-    return fetch("https://developer.nps.gov/api/v1/parks?api_key=your_")
-    .then(response => response.json())
+    return fetch(`https://developer.nps.gov/api/v1/parks?stateCode=TN&stateCode=&api_key=${Settings.npsKey}`)
+    .then(response => response.json()) 
     .then(parsedResponse => {
-        parks = parsedResponse;
+        console.log("test", parsedResponse)
+        nationalParks = parsedResponse.data
     })
-}
+};
+
