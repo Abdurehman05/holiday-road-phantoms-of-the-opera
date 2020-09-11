@@ -1,6 +1,6 @@
-console.log("EateryProvider.js");
-
 let eatery = [];
+
+export const sortedEatery = () => eatery.sort();
 
 export const useEatery = () => eatery.slice();
 

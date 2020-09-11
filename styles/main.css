@@ -1,85 +1,112 @@
 body {
-    background-color: #786141
+    background-color: #CAD6A5;
 }
 
 header {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
+    background: #e9cd6d;
     border: 2px;
     border-style: solid;
     border-color: black;
-    background-color: #7e9947;
-    color: white;
+    color: black;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
 }
 
 .logo {
-    width: 75px;
     height: 90px;
     margin-right: 10em;
     margin-top: 1.2em;
+    width: 75px;
 }
 
 .welcome {
     font-size: 40pt;
-   
+}
+
+.dropdowns {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin-top: 1em;  
 }
 
 .dropdown {
-    display: flex;
-    flex-flow: row;
-    Justify-Content: space-around;
-    margin-top: 1em;
-    border-radius: 20px;
+    border-radius: 7px;
+    font-size: 12pt;
     height: 3em;
+    min-width: 25em;
+}
+
+.dropdown:hover{
+    background-color: #ECE3E1
+}
+
+.weather {
+    width: 40em;
 }
 
 .display {
     display: flex;
     flex-flow: row;
-    Justify-Content: flex-start;
+    justify-content: flex-start;
     margin-top: 2em;
 }
 
-.eateryPreview {
+.AttractionPreview {
+    color: white;    
+}
+
+.EateryPreview {
+    color: white;
+}
+
+.ParkPreview {
     color: white;
 }
 
 .Itinerary-Display {
-    background-color: blue;
+    background-color: #645049;
     border: 2px;
-    border-style: solid;
     border-color: black;
-    width: 73em;
+    border-radius: 3em;
+    border-style: solid;
     height: 45em;
     margin-left: 5em;
-    
+    width: 73em;
 }
 
 .aside {
-    background-color: yellow;
+    background-color: #645049;
     border: 2px;
-    border-style: solid;
     border-color: black;
-    width: 32em;
+    border-radius: 2em;
+    border-style: solid;
     height: 45em;
     margin-left: 3em;
+    width: 32em;
 }
 
 .buttons {
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 .Save-Itinerary {
-    height: 3em;
-    width: 15em;
-    margin-left: 5em;
+    border-radius: 7px;
     font-size: 12pt;
+    height: 3em;
+    margin-left: 5em;
+    width: 15em;
 }
+
+.Save-Itinerary:hover{
+    background-color: #ECE3E1
+}
+
 footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 1em;
-    font-size: 18pt;
     color: white;
+    display: flex;
+    font-size: 18pt;
+    justify-content: center;
+    margin-top: 1px;
 }
