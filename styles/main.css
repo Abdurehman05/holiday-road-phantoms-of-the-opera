@@ -22,7 +22,6 @@ header {
 
 .welcome {
     font-size: 40pt;
-   
 }
 
 .dropdown {
@@ -35,13 +34,16 @@ header {
     min-width: 25em;
 }
 
-
-
 .display {
     display: flex;
     flex-flow: row;
     Justify-Content: flex-start;
     margin-top: 2em;
+}
+
+.AttractionPreview {
+    text-align: center;
+    color: white;
 }
 
 .EateryPreview {

@@ -28,17 +28,15 @@ export const AttractionSelect = () => {
 };
 
 const render = theAttractionArray => {
-        contentTarget.innerHTML = `
-        <fieldset>
-            <legend>Choose your favorite bizarre attraction</legend>
-		        <select class="attraction-dropdown" id="attractionSelect">
+    contentTarget.innerHTML = `
+		        <select class="dropdown" id="attractionSelect">
 			        <option value="0">Please select an attraction...</option>
 			        ${theAttractionArray
-                .map(attractionObject => {
-                  return `<option value="${attractionObject.name}">${attractionObject.name}</option>`;
-                })
-                .join("")}
+            .map(attractionObject => {
+                return `<option value="${attractionObject.name}">${attractionObject.name}</option>`;
+            })
+            .join("")}
              </select>
-        </fieldset>
+        
 	`;
 };
