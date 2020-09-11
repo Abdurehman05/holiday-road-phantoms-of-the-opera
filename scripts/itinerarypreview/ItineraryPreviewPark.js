@@ -9,7 +9,7 @@ eventHub.addEventListener("parkSelected", event => {
         domElement.innerHTML = ""
     } else if (event.detail.parkThatWasSelected !== "0") {
         const matchedPark = useParks().filter(parksObject => {
-            return parksObject.name === event.detail.parkThatWasSelected
+            return parksObject.fullName === event.detail.parkThatWasSelected
         })
         render(matchedPark)
     }
