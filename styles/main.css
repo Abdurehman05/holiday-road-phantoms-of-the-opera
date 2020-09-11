@@ -24,14 +24,22 @@ header {
     font-size: 40pt;
 }
 
-.dropdown {
-    border-radius: 7px;
+.dropdowns {
     display: flex;
     flex-flow: row;
-    height: 3em;
     justify-content: space-around;
     margin-top: 1em;  
+}
+
+.dropdown {
+    border-radius: 7px;
+    font-size: 12pt;
+    height: 3em;
     min-width: 25em;
+}
+
+.dropdown:hover{
+    background-color: #ECE3E1
 }
 
 .weather {
@@ -61,6 +69,7 @@ header {
     background-color: #645049;
     border: 2px;
     border-color: black;
+    border-radius: 3em;
     border-style: solid;
     height: 45em;
     margin-left: 5em;
@@ -71,6 +80,7 @@ header {
     background-color: #645049;
     border: 2px;
     border-color: black;
+    border-radius: 2em;
     border-style: solid;
     height: 45em;
     margin-left: 3em;
@@ -78,7 +88,7 @@ header {
 }
 
 .buttons {
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 .Save-Itinerary {
@@ -87,6 +97,10 @@ header {
     height: 3em;
     margin-left: 5em;
     width: 15em;
+}
+
+.Save-Itinerary:hover{
+    background-color: #ECE3E1
 }
 
 footer {
