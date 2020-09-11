@@ -1,5 +1,5 @@
 body {
-    background-color: #786141
+    background-color: #786141;
 }
 
 header {
@@ -22,13 +22,12 @@ header {
 
 .welcome {
     font-size: 40pt;
-   
 }
 
 .dropdown {
     display: flex;
     flex-flow: row;
-    Justify-Content: space-around;
+    justify-content: space-around;
     margin-top: 1em;
     border-radius: 20px;
     height: 3em;
@@ -37,7 +36,7 @@ header {
 .display {
     display: flex;
     flex-flow: row;
-    Justify-Content: flex-start;
+    justify-content: flex-start;
     margin-top: 2em;
 }
 
@@ -53,7 +52,6 @@ header {
     width: 73em;
     height: 45em;
     margin-left: 5em;
-    
 }
 
 .aside {
@@ -76,6 +74,7 @@ header {
     margin-left: 5em;
     font-size: 12pt;
 }
+
 footer {
     display: flex;
     justify-content: center;
