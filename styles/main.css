@@ -1,5 +1,5 @@
 body {
-    background-color: #786141
+    background-color: #786141;
 }
 
 header {
@@ -9,7 +9,7 @@ header {
     border: 2px;
     border-style: solid;
     border-color: black;
-    background-color: #7e9947;
+    background: rgb(126,153,71);
     color: white;
 }
 
@@ -32,7 +32,10 @@ header {
     margin-top: 1em;
     border-radius: 20px;
     height: 3em;
+    min-width: 25em;
 }
+
+
 
 .display {
     display: flex;
@@ -41,7 +44,8 @@ header {
     margin-top: 2em;
 }
 
-.eateryPreview {
+.EateryPreview {
+    text-align: center;
     color: white;
 }
 
@@ -75,6 +79,7 @@ header {
     width: 15em;
     margin-left: 5em;
     font-size: 12pt;
+    border-radius: 10em;
 }
 footer {
     display: flex;

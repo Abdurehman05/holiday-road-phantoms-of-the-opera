@@ -13,8 +13,10 @@ eventHub.addEventListener("eateryChosen", event => {
             return eatery.businessName === event.detail.eateryThatWasChosen
         })
         render(matchedEatery)
-        console.log(matchedEatery)
+    } else {
+        render(useEatery())
     }
+
 })
 
 const render = (taco) => {
@@ -25,6 +27,5 @@ const render = (taco) => {
     domElement.innerHTML = EateryHTMLArray.join("");
 }
 
-export const testing = () => {
-    console.log("test complete")
+export const populateEateryPreview = () => {
 }
