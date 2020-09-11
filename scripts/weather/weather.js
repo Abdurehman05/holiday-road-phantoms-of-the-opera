@@ -4,7 +4,7 @@ export const weatherHTML = (weatherObj) => {
     //console.log("weatherObject test", weatherObj)
     let d = new Date(weatherObj.dt)
     let day = d.getDay()
-    let options = {month: 'long',}
+    let options = { month: 'long', }
     let month = new Intl.DateTimeFormat('en-US', options).format(d)
     let year = d.getFullYear()
     //console.log(d)

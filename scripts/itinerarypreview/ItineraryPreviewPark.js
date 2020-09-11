@@ -1,8 +1,9 @@
 import { ParkHTML } from './ParkPreview.js'
-import { useParks, getParks } from '../parks/ParkProvider.js'
+import { useParks } from '../parks/ParkProvider.js'
 
-const eventHub = document.querySelector(".container")
-const domElement = document.querySelector(".Itinerary-Display")
+const eventHub = document.querySelector(".container");
+const domElement = document.querySelector(".Itinerary-Display");
+
 eventHub.addEventListener("parkSelected", event => {
     if (event.detail.parkThatWasSelected === "0") {
         domElement.innerHTML = ""
@@ -12,8 +13,7 @@ eventHub.addEventListener("parkSelected", event => {
         })
         render(matchedPark)
     }
-
-})
+});
 
 const render = (taco) => {
     let ParkHTMLArray = taco.map(singlePark => {
@@ -23,13 +23,4 @@ const render = (taco) => {
 }
 
 export const populateParkPreview = () => {
-}
-
-
-export const ParkPreview = () => {
-    getParks()
-        .then(() => {
-            const parksArray = useParks()
-            render(parksArray)
-        });
 };

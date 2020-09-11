@@ -7,10 +7,11 @@ eventHub.addEventListener("change", event => {
     // if attraction select changes, statments inside the curly brackets will be executed
     if (event.target.id === "attractionSelect") {
         const customEvent = new CustomEvent("attractionChosen", {
+
             detail: {
                 attractionThatWasChosen: event.target.value
             }
-        });
+        })
 
         //add event to the hub
         eventHub.dispatchEvent(customEvent);
@@ -24,7 +25,7 @@ export const AttractionSelect = () => {
     getAttractions().then(() => {
         const attractionArray = useAttractions();
         render(attractionArray);
-    });
+    })
 };
 
 const render = theAttractionArray => {
@@ -38,5 +39,5 @@ const render = theAttractionArray => {
             .join("")}
              </select>
         
-	`;
+	`
 };
