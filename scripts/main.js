@@ -8,5 +8,5 @@ EaterySelect();
 AttractionSelect();
 ParkSelect();
 EaterySelect();
-weatherList();
+//weatherList();
 testing();
