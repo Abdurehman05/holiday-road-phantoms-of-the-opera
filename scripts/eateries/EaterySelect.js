@@ -1,5 +1,3 @@
-console.log("EaterySelect.js");
-
 import { useEatery, getEatery } from "./EateryProvider.js"
 
 //creates a variable named eventHub and attaches it to the "container" class in the main portion of index.html

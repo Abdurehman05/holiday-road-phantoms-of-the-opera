@@ -1,5 +1,5 @@
 import { EateryHTML } from './EateryPreview.js'
-import { getEatery, useEatery } from '../eateries/EateryProvider.js'
+import { useEatery } from '../eateries/EateryProvider.js'
 
 const eventHub = document.querySelector(".container")
 const domElement = document.querySelector(".Itinerary-Display")

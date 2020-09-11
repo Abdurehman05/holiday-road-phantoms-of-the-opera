@@ -1,5 +1,5 @@
 import { AttractionHTML } from './AttractionsPreview.js'
-import { getAttractions, useAttractions } from '../attractions/AttractionProvider.js'
+import { useAttractions } from '../attractions/AttractionProvider.js'
 
 const eventHub = document.querySelector(".container")
 const domElement = document.querySelector(".Itinerary-Display")

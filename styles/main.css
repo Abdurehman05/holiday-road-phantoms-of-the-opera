@@ -51,6 +51,11 @@ header {
     color: white;
 }
 
+.ParkPreview {
+    text-align: center;
+    color: white;
+}
+
 .Itinerary-Display {
     background-color: blue;
     border: 2px;
