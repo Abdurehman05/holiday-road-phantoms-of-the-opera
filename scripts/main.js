@@ -1,14 +1,21 @@
 import { ParkSelect } from "./parks/ParkSelected.js";
-import { EaterySelect } from "./eateries/EaterySelect.js";
-import { AttractionSelect } from "./attractions/AttractionSelect.js";
 import { weatherList } from "./weather/weatherList.js";
-import { testing } from "./itinerarypreview/ItineraryPreviewEatery.js";
 import { AttractionPreview } from "./attractions/ItineraryPreview.js";
+import { AttractionSelect } from "./attractions/AttractionSelect.js";
+import { EaterySelect } from "./eateries/EaterySelect.js";
+//import { getWeather } from './weather/WeatherProvider.js';
+import { populateAttractionPreview } from "./itinerarypreview/ItineraryPreviewAttractions.js";
+import { populateEateryPreview } from "./itinerarypreview/ItineraryPreviewEatery.js";
+import { populateParkPreview } from "./itinerarypreview/ItineraryPreviewPark.js";
+//import { weatherList } from './weather/weatherList.js';
 
-EaterySelect();
 AttractionSelect();
-ParkSelect();
 EaterySelect();
 weatherList();
-testing();
 AttractionPreview();
+//getWeather();
+ParkSelect();
+populateAttractionPreview();
+populateEateryPreview();
+populateParkPreview();
+//weatherList();
