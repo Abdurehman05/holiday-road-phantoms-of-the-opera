@@ -15,4 +15,3 @@ export const getParks = () => {
         nationalParks = parsedResponse.data
     })
 };
-
