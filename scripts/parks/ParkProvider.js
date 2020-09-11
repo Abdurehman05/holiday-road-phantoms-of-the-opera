@@ -8,7 +8,7 @@ export const useParks = () => {
 }
 
 export const getParks = () => {
-    return fetch(`https://developer.nps.gov/api/v1/parks?stateCode=TN&stateCode=&api_key=${Settings.npsKey}`)
+    return fetch(`https://developer.nps.gov/api/v1/parks?stateCode=KS&stateCode=AZ&stateCode=CA&stateCode=TN&stateCode=NV&stateCode=OR&stateCode=WA&stateCode=CO&stateCode=NM&stateCode=&api_key=${Settings.npsKey}`)
     .then(response => response.json()) 
     .then(parsedResponse => {
         console.log("test", parsedResponse)

@@ -25,15 +25,18 @@ const contentTarget = document.querySelector(".National-ParksContainer")
 
 const render = (theParkArray) => {
 	contentTarget.innerHTML = `
-	<select class="park-dropdown" id="parkSelect">
-	<option value="0">Please select a park...</option>
+	<fieldset>
+        <legend>List of National Parks</legend>
+			<select class="park-dropdown" id="parkSelect">
+			<option value="0">Please select a park...</option>
 	${theParkArray.map(parksObject => {
 		return `<option value="${parksObject.name}">${parksObject.name}</option>`
 		
 	})
-	// .join("")
+	.join("")
 }
 </select>
+</fieldset>
 `
 }
 

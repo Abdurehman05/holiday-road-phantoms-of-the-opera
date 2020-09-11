@@ -1,5 +1,5 @@
 body {
-    background-color: #786141
+    background-color: oldlace;
 }
 
 header {
@@ -46,7 +46,7 @@ header {
 }
 
 .Itinerary-Display {
-    background-color: blue;
+    background-color: aliceblue;
     border: 2px;
     border-style: solid;
     border-color: black;
@@ -57,7 +57,7 @@ header {
 }
 
 .aside {
-    background-color: yellow;
+    background-color: aliceblue;
     border: 2px;
     border-style: solid;
     border-color: black;
