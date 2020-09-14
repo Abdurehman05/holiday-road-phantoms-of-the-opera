@@ -1,7 +1,10 @@
 export const EateryHTML = (eateryObj) => {
     return `
-    <h3 class="Eatery-Itinerary-Display">
+    <div class="eateryFormatting">
+    <h4 class="Eatery-Itinerary-Display">
         ${(eateryObj.businessName)}
-    </h3>    
+    </h4>
+
+    <button class="eateryDetail">Eatery Details</button> 
     `
 };
