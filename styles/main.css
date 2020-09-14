@@ -1,13 +1,14 @@
+  
 body {
-    background-color: #cad6a5;
+    background-color: white;
 }
 
 header {
-    background: #e9cd6d;
+    background: black;
     border: 2px;
-    border-style: solid;
-    border-color: black;
-    color: black;
+    /* border-style: solid; */
+    border-color: none;
+    color: white;
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -21,7 +22,20 @@ header {
 }
 
 .welcome {
-    font-size: 40pt;
+    font-size: 30pt;
+}
+
+.banner {
+    margin-left: 0em;
+}
+h1 {
+    font-size: 20pt;
+    
+}
+
+h2 {
+    font-size: 20pt;
+    margin-left: 16em;
 }
 
 .dropdowns {
@@ -69,27 +83,33 @@ header {
 }
 
 .display {
-    background-color: #645049;
+    background-color: white;
     border: 2px;
-    border-color: black;
-    /* border-radius: 3em; */
+    border-color: forestgreen;
+    border-radius: 0em;
     border-style: solid;
-    height: 45em;
+    border-width: thick;
+    height: 30em;
     margin-left: 5em;
-    width: 50em;
-}
+    width: 35em;
+    /* justify-content: flex-end; */
+    flex-direction: unset;
+  
+} 
 
 .aside {
-    background-color: #645049;
+    background-color: white;
     border: 2px;
-    border-color: black;
-    /* border-radius: 2em; */
+    border-color: forestgreen;
+    border-radius: 0em;
     border-style: solid;
-    height: 45em;
+    border-width: thick;
+    height: 15em;
     margin-left: 3em;
-    width: 32em;
+    width: 35em;
+    /* justify-content: flex-end;
+} */
 }
-
 .buttons {
     margin-top: 3em;
 }
@@ -113,3 +133,52 @@ footer {
     justify-content: center;
     margin-top: 1px;
 }
+body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: auto;
+  }
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+                }
+
+.caption-container {
+    font-size: 1.6em;
+    text-align: center;
+    background-color: #222;
+    
+    padding: 2px 16px;
+    color: white;
+}
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumbnail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
