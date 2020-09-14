@@ -1,5 +1,5 @@
 let eatery = [];
-
+let newEats = []
 
 
 export const useEatery = () => eatery.slice();
@@ -9,5 +9,11 @@ export const getEatery = () => {
         .then(response => response.json())
         .then(parsedResponse => {
             eatery = parsedResponse
+            eatery.map(itemObj => {
+                newEats = itemObj.businessName
+                console.log(newEats)
+                return newEats
+            })
         })
-};
+}
+

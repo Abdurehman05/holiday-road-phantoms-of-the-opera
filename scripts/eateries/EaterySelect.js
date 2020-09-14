@@ -16,7 +16,8 @@ eventHub.addEventListener("change", event => {
         })
         eventHub.dispatchEvent(customEateryEvent)
     }
-});
+
+});             
 
 //receives the eateries names from the useEatery function and passes them individually as html dropdown options
 const render = (EateryCollection) => {
