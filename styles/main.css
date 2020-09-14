@@ -46,12 +46,7 @@ header {
     width: 40em;
 }
 
-.display {
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
-    margin-top: 2em;
-}
+
 
 .AttractionPreview {
     color: white;    
@@ -65,7 +60,15 @@ header {
     color: white;
 }
 
-.Itinerary-Display {
+
+.displayandaside {
+    display: flex;
+    flex-flow: row;
+    
+    margin-top: 2em;
+}
+
+.display {
     background-color: #645049;
     border: 2px;
     border-color: black;
@@ -73,7 +76,7 @@ header {
     border-style: solid;
     height: 45em;
     margin-left: 5em;
-    width: 73em;
+    width: 50em;
 }
 
 .aside {

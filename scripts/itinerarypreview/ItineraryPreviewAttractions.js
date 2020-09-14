@@ -2,7 +2,7 @@ import { AttractionHTML } from './AttractionsPreview.js'
 import { useAttractions } from '../attractions/AttractionProvider.js'
 
 const eventHub = document.querySelector(".container")
-const domElement = document.querySelector(".Itinerary-Display")
+const domElement = document.querySelector(".Attraction-Itinerary-Display")
 eventHub.addEventListener("attractionChosen", event => {
     if (event.detail.attractionThatWasChosen === "0") {
         domElement.innerHTML = ""

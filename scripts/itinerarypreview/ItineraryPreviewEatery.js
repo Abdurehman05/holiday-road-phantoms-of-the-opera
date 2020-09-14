@@ -2,7 +2,7 @@ import { EateryHTML } from './EateryPreview.js'
 import { useEatery } from '../eateries/EateryProvider.js'
 
 const eventHub = document.querySelector(".container")
-const domElement = document.querySelector(".Itinerary-Display")
+const domElement = document.querySelector(".Eatery-Itinerary-Display")
 eventHub.addEventListener("eateryChosen", event => {
     if (event.detail.eateryThatWasChosen === "0") {
         domElement.innerHTML = ""
