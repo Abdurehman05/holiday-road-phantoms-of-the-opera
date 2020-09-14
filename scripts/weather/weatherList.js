@@ -8,7 +8,6 @@ eventHub.addEventListener("parkSelected", event => {
     weatherList()
 })
 
-
 export const weatherList = () => {
     getWeather()
         .then(() => {
