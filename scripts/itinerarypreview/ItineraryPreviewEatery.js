@@ -12,7 +12,7 @@ eventHub.addEventListener("eateryChosen", event => {
         })
         render(matchedEatery)
     }
-
+    
 })
 
 const render = (taco) => {
@@ -23,4 +23,5 @@ const render = (taco) => {
 }
 
 export const populateEateryPreview = () => {
+    debugger;
 }
