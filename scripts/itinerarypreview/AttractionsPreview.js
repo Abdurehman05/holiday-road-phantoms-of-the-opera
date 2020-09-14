@@ -1,7 +1,8 @@
 export const AttractionHTML = (attractionObj) => {
     return `
-    <h3 class="Attraction-Itinerary-Display">
+    <div class="attractionFormatting">
+    <h4 class="Attraction-Itinerary-Display">
         ${(attractionObj.name)}
-    </h3>    
+    </h4>    
     `
 };

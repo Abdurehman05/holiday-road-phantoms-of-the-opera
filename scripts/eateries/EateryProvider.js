@@ -1,6 +1,4 @@
 let eatery = [];
-let newEats = []
-let sortedEats = []
 
 export const useEatery = () => eatery.slice();
 

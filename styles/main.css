@@ -29,8 +29,7 @@ header {
     margin-left: 0em;
 }
 h1 {
-    font-size: 20pt;
-    
+    font-size: 20pt;    
 }
 
 h2 {
@@ -65,26 +64,59 @@ h2 {
     border-style: solid
 }
 
-.parkBox {
+.parkFormatting {
+    align-content: space-between;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.parkDetails {
     width: 10em;
+}
+
+.attractionFormatting { 
+    align-content: space-between;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.bizarre {
+    width: 10em;
+}
+
+.eateryFormatting { 
+    align-content: space-between;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.eateryDetail {
+    width: 10em;
+}
+
+.parkBox {
+    flex-basis: auto;
     height: auto;
-    font-size: 14pt;
-    margin-top: 2em;
-   
+    margin-top: 4em;
+    width: 55em;
 }
 
 .attractionBox {
-    width: 10em;
+    flex-basis: auto;
     height: auto;
-    font-size: 14pt;
-    margin-top: 2em;
+    margin-top: 4em;
+    width: 55em;
 }
 
 .eateriesBox {
-    width: 10em;
+    flex-basis: auto;
+    width: 55em;
     height: auto;
-    font-size: 14pt;
-    margin-top: 2em;
+
+    margin-top: 4em;
 }
 
 .AttractionPreview {
@@ -115,13 +147,16 @@ h2 {
     border-width: thick;
     height: 30em;
     margin-left: 5em;
-    width: 35em;
+    width: 55em;
     /* justify-content: flex-end; */
     flex-direction: unset;
-  
 } 
 
+
+
 .weatherContainer {
+    padding-top: 1em;
+    text-align: center;
     background-color: white;
     border: 2px;
     border-color: forestgreen;
@@ -130,8 +165,8 @@ h2 {
     border-width: thick;
     height: auto;
     margin-left: 3em;
-    width: 35em;
-  }
+    width: 15em;
+}
 
 .aside {
     background-color: white;

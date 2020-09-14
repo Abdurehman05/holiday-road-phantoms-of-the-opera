@@ -8,10 +8,9 @@ export const useWeather = () => {
 }
 
 export const getWeather = () => {
-    console.log("getWeather works")
     let parks = useParks()
     const targetPark = parks.find(park => {
-        return park.name === document.querySelector("#parkSelect").value
+        return park.fullName === document.querySelector("#parkSelect").value
     })
     console.log("targetpark", targetPark)
     return fetch(`http://api.openweathermap.org/data/2.5/forecast?zip=${targetPark.addresses[0].postalCode}&appid=${Settings.weatherKey}`)
