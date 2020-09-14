@@ -16,20 +16,18 @@ eventHub.addEventListener("change", event => {
         })
         eventHub.dispatchEvent(customEateryEvent)
     }
-
-});             
+});
 
 //receives the eateries names from the useEatery function and passes them individually as html dropdown options
 const render = (EateryCollection) => {
     contentTarget.innerHTML = `
         <select class="dropdown" id="eaterySelect">
             <option value="0">Please select an eatery...</option>
-            ${
-        EateryCollection.map(
-            eateryObj => {
-                const newEatery = eateryObj.businessName
-                return `<option value="${newEatery}">${newEatery}</option>`
-            })
+            ${EateryCollection.map(
+        eateryObj => {
+            const newEatery = eateryObj.businessName
+            return `<option value="${newEatery}">${newEatery}</option>`
+        })
         }
         </select >
     `
