@@ -19,8 +19,10 @@ const render = theParkArray => {
 	<select class="dropdown" id="parkSelect">
 	<option value="0">Please select a park...</option>
 	${theParkArray.map(parksObject => {
-    return `<option value="${parksObject.fullName}">${parksObject.fullName}</option>`;
-  })}
+		return `<option value="${parksObject.fullName}">${parksObject.fullName}</option>`
+	})
+		}
+
 	</select>
 	`;
 };

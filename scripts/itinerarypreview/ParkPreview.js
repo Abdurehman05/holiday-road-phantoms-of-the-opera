@@ -1,7 +1,7 @@
 export const ParkHTML = (parksObject) => {
     return `
     <h3 class="ParkPreview">
-        ${(parksObject.name)}
+        ${(parksObject.fullName)}
     </h3>    
     `
 };
