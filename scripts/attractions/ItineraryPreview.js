@@ -13,7 +13,7 @@ eventHub.addEventListener("attractionChosen", event => {
 });
 
 const render = attractionArray => {
-    const DOMElement = document.querySelector(".Itinerary-Display");
+    const DOMElement = document.querySelector(".Attraction-Itinerary-Display");
     let AttractionHTMLArray = attractionArray.map(anAtraction => {
         return AttractionHTML(anAtraction);
     });

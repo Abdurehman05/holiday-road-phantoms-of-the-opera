@@ -2,7 +2,7 @@ import { ParkHTML } from './ParkPreview.js'
 import { useParks } from '../parks/ParkProvider.js'
 
 const eventHub = document.querySelector(".container");
-const domElement = document.querySelector(".Itinerary-Display");
+const domElement = document.querySelector(".Park-Itinerary-Display");
 
 eventHub.addEventListener("parkSelected", event => {
     if (event.detail.parkThatWasSelected === "0") {

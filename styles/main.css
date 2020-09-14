@@ -60,12 +60,7 @@ h2 {
     width: 40em;
 }
 
-.display {
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
-    margin-top: 2em;
-}
+
 
 .AttractionPreview {
     color: white;
@@ -79,7 +74,15 @@ h2 {
     color: white;
 }
 
-.Itinerary-Display {
+
+.displayandaside {
+    display: flex;
+    flex-flow: row;
+    
+    margin-top: 2em;
+}
+
+.display {
     background-color: white;
     border: 2px;
     border-color: forestgreen;
