@@ -5,10 +5,7 @@ import { ParkSelect } from './parks/ParkSelect.js'
 import { populateAttractionPreview } from './itinerarypreview/ItineraryPreviewAttractions.js'
 import { populateEateryPreview } from './itinerarypreview/ItineraryPreviewEatery.js'
 import { populateParkPreview } from './itinerarypreview/ItineraryPreviewPark.js'
-//import { weatherList } from './weather/weatherList.js';
-
-
-
+import { weatherList } from './weather/weatherList.js';
 
 AttractionSelect();
 EaterySelect();
@@ -18,5 +15,3 @@ populateAttractionPreview()
 populateEateryPreview();
 populateParkPreview()
 //weatherList();
-
-
