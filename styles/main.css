@@ -63,7 +63,7 @@ h2 {
 .parkBox {
     width: 15em;
     height: auto;
-    font-size: 14pt;
+    font-size: 10pt;
     border: 2px;
     border-style: solid;
 }
@@ -137,7 +137,7 @@ h2 {
 
 .Save-Itinerary {
     border-radius: 7px;
-    font-size: 12pt;
+    font-size: 10pt;
     height: 3em;
     margin-left: 5em;
     width: 15em;
@@ -204,4 +204,6 @@ body {
     opacity: 1;
   }
 
-  
+  .numberText {
+      
+  }

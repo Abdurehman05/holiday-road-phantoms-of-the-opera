@@ -11,5 +11,6 @@ export const getParks = () => {
         .then(response => response.json())
         .then(parsedResponse => {
             nationalParks = parsedResponse.data
+            console.log("test", nationalParks)
         })
 };

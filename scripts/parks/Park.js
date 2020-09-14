@@ -1,9 +1,10 @@
 export const ParkHTML = attractionObj => {
-    return `
-	
-			<h4>Park: ${parkObj.name}</h4>
-			<button class="parkDetails">Park Details</button> 
-			
+	return `
+	<section id="park-${parkObj.id}" class="card-park">
+	<h3>${parkObj.name} <button class="park">Park Details</h3>
+	<p>Street: ${parkObj.line1}</p>
+	<p>City&State: ${parkObj.city}, ${parkObj.state}</p>
+		
 	
 	`;
 };
