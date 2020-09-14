@@ -3,8 +3,6 @@ import { getWeather, useWeather } from './WeatherProvider.js'
 
 const eventHub = document.querySelector(".container")
 eventHub.addEventListener("parkSelected", event => {
-    console.log("dispatch works")
-    console.log("eventHub works")
     weatherList()
 })
 
