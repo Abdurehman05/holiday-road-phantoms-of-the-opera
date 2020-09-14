@@ -2,9 +2,11 @@ import { AttractionHTML } from "./Attraction.js";
 import { useAttractions } from "./AttractionProvider.js";
 
 const eventHub = document.querySelector(".container");
-
+const DOMElement = document.querySelector(".Attraction-Itinerary-Display");
 eventHub.addEventListener("attractionChosen", event => {
-    if (event.detail.attractionThatWasChosen !== "0") {
+    if (event.detail.attractionThatWasChosen === "0") {
+        DOMElement.innerHTML = ""
+    } else if (event.detail.attractionThatWasChosen !== "0") {
         const matchedAttraction = useAttractions().filter(attraction => {
             return attraction.name === event.detail.attractionThatWasChosen;
         });
@@ -12,8 +14,14 @@ eventHub.addEventListener("attractionChosen", event => {
     }
 });
 
+
+
+
+
+
+
 const render = attractionArray => {
-    const DOMElement = document.querySelector(".Attraction-Itinerary-Display");
+
     let AttractionHTMLArray = attractionArray.map(anAtraction => {
         return AttractionHTML(anAtraction);
     });
