@@ -1,5 +1,5 @@
 body {
-    background-color: #CAD6A5;
+    background-color: #cad6a5;
 }
 
 header {
@@ -28,7 +28,7 @@ header {
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    margin-top: 1em;  
+    margin-top: 1em;
 }
 
 .dropdown {
@@ -38,8 +38,8 @@ header {
     min-width: 25em;
 }
 
-.dropdown:hover{
-    background-color: #ECE3E1
+.dropdown:hover {
+    background-color: #ece3e1;
 }
 
 .weather {
@@ -49,7 +49,7 @@ header {
 
 
 .AttractionPreview {
-    color: white;    
+    color: white;
 }
 
 .EateryPreview {
@@ -72,7 +72,7 @@ header {
     background-color: #645049;
     border: 2px;
     border-color: black;
-    border-radius: 3em;
+    /* border-radius: 3em; */
     border-style: solid;
     height: 45em;
     margin-left: 5em;
@@ -83,7 +83,7 @@ header {
     background-color: #645049;
     border: 2px;
     border-color: black;
-    border-radius: 2em;
+    /* border-radius: 2em; */
     border-style: solid;
     height: 45em;
     margin-left: 3em;
@@ -102,8 +102,8 @@ header {
     width: 15em;
 }
 
-.Save-Itinerary:hover{
-    background-color: #ECE3E1
+.Save-Itinerary:hover {
+    background-color: #ece3e1;
 }
 
 footer {
