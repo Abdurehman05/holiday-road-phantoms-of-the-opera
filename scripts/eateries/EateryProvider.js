@@ -1,6 +1,6 @@
 let eatery = [];
-
-export const sortedEatery = () => eatery.sort();
+let newEats = []
+let sortedEats = []
 
 export const useEatery = () => eatery.slice();
 
@@ -9,5 +9,7 @@ export const getEatery = () => {
         .then(response => response.json())
         .then(parsedResponse => {
             eatery = parsedResponse
+
         })
-};
+}
+
