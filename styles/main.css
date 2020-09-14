@@ -60,15 +60,32 @@ h2 {
     width: 40em;
 }
 
-.parkBox {
-    width: 15em;
-    height: auto;
-    font-size: 14pt;
+.previewPark {
     border: 2px;
-    border-style: solid;
+    border-style: solid
 }
 
+.parkBox {
+    width: 10em;
+    height: auto;
+    font-size: 14pt;
+    margin-top: 2em;
+   
+}
 
+.attractionBox {
+    width: 10em;
+    height: auto;
+    font-size: 14pt;
+    margin-top: 2em;
+}
+
+.eateriesBox {
+    width: 10em;
+    height: auto;
+    font-size: 14pt;
+    margin-top: 2em;
+}
 
 .AttractionPreview {
     color: white;
@@ -86,12 +103,10 @@ h2 {
 .displayandaside {
     display: flex;
     flex-flow: row;
-    
     margin-top: 2em;
 }
 
-.display {
-   
+.display {   
     background-color: white;
     border: 2px;
     border-color: forestgreen;
