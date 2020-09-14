@@ -1,9 +1,6 @@
 export const AttractionHTML = attractionObj => {
     return `
 	
-			<h4>Bizarre: ${attractionObj.name}</h4>
-			<button class="bizarre">Bizarre Details</button> 
-			
-	
+			<h3>${attractionObj.name}  <button class="bizarre">Bizarre Details</button></h3>
 	`;
 };
