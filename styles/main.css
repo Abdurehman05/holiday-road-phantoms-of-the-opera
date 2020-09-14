@@ -60,6 +60,14 @@ h2 {
     width: 40em;
 }
 
+.parkBox {
+    width: 15em;
+    height: auto;
+    font-size: 14pt;
+    border: 2px;
+    border-style: solid;
+}
+
 
 
 .AttractionPreview {
@@ -83,6 +91,7 @@ h2 {
 }
 
 .display {
+   
     background-color: white;
     border: 2px;
     border-color: forestgreen;
@@ -97,6 +106,18 @@ h2 {
   
 } 
 
+.weatherContainer {
+    background-color: white;
+    border: 2px;
+    border-color: forestgreen;
+    border-radius: 0em;
+    border-style: solid;
+    border-width: thick;
+    height: auto;
+    margin-left: 3em;
+    width: 35em;
+  }
+
 .aside {
     background-color: white;
     border: 2px;
@@ -104,7 +125,7 @@ h2 {
     border-radius: 0em;
     border-style: solid;
     border-width: thick;
-    height: 15em;
+    height: auto;
     margin-left: 3em;
     width: 35em;
     /* justify-content: flex-end;
@@ -182,3 +203,5 @@ body {
   .demo:hover {
     opacity: 1;
   }
+
+  
