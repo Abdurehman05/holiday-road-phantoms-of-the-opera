@@ -15,7 +15,6 @@ export const weatherList = () => {
 }
 
 const render = aWeatherArray => {
-    console.log(aWeatherArray)
     const domElement = document.querySelector(".weatherContainer");
 
     let HTMLArray = aWeatherArray.map(singleWeather => {

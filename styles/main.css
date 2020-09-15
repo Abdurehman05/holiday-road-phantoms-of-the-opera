@@ -29,8 +29,7 @@ header {
     margin-left: 0em;
 }
 h1 {
-    font-size: 20pt;
-    
+    font-size: 20pt;    
 }
 
 h2 {
@@ -60,15 +59,68 @@ h2 {
     width: 40em;
 }
 
-.parkBox {
-    width: 15em;
-    height: auto;
-    font-size: 10pt;
+.previewPark {
     border: 2px;
-    border-style: solid;
+    border-style: solid
 }
 
+.parkFormatting {
+    align-content: space-between;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
 
+.parkDetails {
+    width: 10em;
+    margin-right: 2em;
+}
+
+.attractionFormatting { 
+    align-content: space-between;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.bizarre {
+    width: 10em;
+    margin-right: 0.5em;
+}
+
+.eateryFormatting { 
+    align-content: space-between;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.eateryDetail {
+    width: 10em;
+    margin-right: 1em;
+}
+
+.parkBox {
+    flex-basis: auto;
+    height: auto;
+    margin-top: 4em;
+    width: 55em;
+}
+
+.attractionBox {
+    flex-basis: auto;
+    height: auto;
+    margin-top: 4em;
+    width: 55em;
+}
+
+.eateriesBox {
+    flex-basis: auto;
+    width: 55em;
+    height: auto;
+
+    margin-top: 4em;
+}
 
 .AttractionPreview {
     color: white;
@@ -86,12 +138,10 @@ h2 {
 .displayandaside {
     display: flex;
     flex-flow: row;
-    
     margin-top: 2em;
 }
 
-.display {
-   
+.display {   
     background-color: white;
     border: 2px;
     border-color: forestgreen;
@@ -100,13 +150,16 @@ h2 {
     border-width: thick;
     height: 30em;
     margin-left: 5em;
-    width: 35em;
+    width: 55em;
     /* justify-content: flex-end; */
     flex-direction: unset;
-  
 } 
 
+
+
 .weatherContainer {
+    padding-top: 1em;
+    text-align: center;
     background-color: white;
     border: 2px;
     border-color: forestgreen;
@@ -115,8 +168,8 @@ h2 {
     border-width: thick;
     height: auto;
     margin-left: 3em;
-    width: 35em;
-  }
+    width: 15em;
+}
 
 .aside {
     background-color: white;

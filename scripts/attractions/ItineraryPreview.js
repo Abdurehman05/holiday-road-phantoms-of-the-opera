@@ -14,12 +14,6 @@ eventHub.addEventListener("attractionChosen", event => {
     }
 });
 
-
-
-
-
-
-
 const render = attractionArray => {
 
     let AttractionHTMLArray = attractionArray.map(anAtraction => {
