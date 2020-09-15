@@ -18,12 +18,12 @@ eventHub.addEventListener("click", event => {
 
 export const AttractionHTML = attractionObj => {
     return `
-	<section id="attraction--${attractionObj.id}" class="card-attraction">
+	<div id="attraction--${attractionObj.id}" class="attractionFormatting">
 		<h3>${attractionObj.name}  <button id="associates--${
     attractionObj.id
   }">Bizarre Details</button>${AttractionDialog(attractionObj.id)}</h3>
 		
 		
-	</section>			
+	</div>			
 	`;
 };

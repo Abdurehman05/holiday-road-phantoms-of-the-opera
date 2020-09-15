@@ -12,7 +12,7 @@ export const weatherHTML = (weatherObj) => {
             <div>Fahrenheit Temp: ${fTotal}</div>
             <div>Humidity: ${weatherObj.main.humidity}%</div>
             <div>${weatherObj.weather[0].description}</div>
-            <div>" " </div>
+            <br>
         </section>
     `
 }
