@@ -8,6 +8,7 @@ import { populateParkPreview } from "./itinerarypreview/ItineraryPreviewPark.js"
 import "./weather/weatherList.js";
 import "../save/savePreview.js"
 
+
 AttractionSelect();
 EaterySelect();
 AttractionPreview();

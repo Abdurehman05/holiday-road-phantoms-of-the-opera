@@ -73,6 +73,7 @@ h2 {
 
 .parkDetails {
     width: 10em;
+    margin-right: 2em;
 }
 
 .attractionFormatting { 
@@ -84,6 +85,7 @@ h2 {
 
 .bizarre {
     width: 10em;
+    margin-right: 0.5em;
 }
 
 .eateryFormatting { 
@@ -95,6 +97,7 @@ h2 {
 
 .eateryDetail {
     width: 10em;
+    margin-right: 1em;
 }
 
 .parkBox {
@@ -187,7 +190,7 @@ h2 {
 
 .Save-Itinerary {
     border-radius: 7px;
-    font-size: 12pt;
+    font-size: 10pt;
     height: 3em;
     margin-left: 5em;
     width: 15em;
@@ -254,4 +257,6 @@ body {
     opacity: 1;
   }
 
-  
+  .numberText {
+      
+  }

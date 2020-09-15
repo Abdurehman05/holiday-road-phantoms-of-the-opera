@@ -1,3 +1,4 @@
+import { ParkHTML } from "./Park.js";
 import { getParks, useParks } from "./ParkProvider.js";
 
 const eventHub = document.querySelector(".container");
@@ -8,6 +9,7 @@ eventHub.addEventListener("change", changeEvent => {
         const customEvent = new CustomEvent("parkSelected", {
             detail: {
                 parkThatWasSelected: event.target.value
+                
             }
         });
         eventHub.dispatchEvent(customEvent);
