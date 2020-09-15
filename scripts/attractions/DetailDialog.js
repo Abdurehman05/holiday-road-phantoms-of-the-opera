@@ -4,32 +4,28 @@ const eventHub = document.querySelector(".container");
 
 eventHub.addEventListener("attractionClicked", event => {
             const detailAttraction = useAttractions().find(attraction => {
-                return attraction.id === event.detail.chosenAttraction;
+                return attraction.id === parseInt(event.detail.chosenAttraction);
             });
-
             const attractionTarget = document.querySelector(
-                `.attractionDialog--${detailAttraction.id}`
+                `.attraction--${detailAttraction.id}`
             );
             const hTarget = document.querySelector("h4");
 
             if (attractionTarget.contains(hTarget)) {
                 attractionTarget.innerHTML = "";
             } else {
-                attractionTarget.innerHTML = `${detailAttraction
-      .map(attraction => {
-        return `
-            <h4>Located in: ${attraction.city}, ${attraction.state} </h4>
-            <p>Description: ${attraction.description}</p>
-            <p>Souvenirs: ${attraction.ameneties.souvenirs}</p>
-            <p>Restrooms: ${attraction.ameneties.restrooms}</p>
+                attractionTarget.innerHTML = `${(detailAttraction.ameneties,
+    attraction => {
+      return `
+            <h4>Souvenirs: ${attraction.souvenirs}</h4>
+            <h4>Restrooms: ${attraction.restrooms}</h4>
 				`;
-      })
-      .join("")}`;
+    })}`;
   }
 });
 
 export const AttractionDialog = id => {
   return `
-		<span class="attractionDialog--${id}"></span>
+		<span class="attraction--${id}"></span>
 	`;
 };
