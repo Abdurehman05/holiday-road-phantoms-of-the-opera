@@ -6,6 +6,7 @@ import { EaterySelect } from "./eateries/EaterySelect.js";
 import { populateEateryPreview } from "./itinerarypreview/ItineraryPreviewEatery.js";
 import { populateParkPreview } from "./itinerarypreview/ItineraryPreviewPark.js";
 import "./weather/weatherList.js";
+import "../save/savePreview.js"
 
 
 AttractionSelect();

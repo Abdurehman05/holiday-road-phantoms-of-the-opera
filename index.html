@@ -20,7 +20,14 @@
             <!------------------------   Untitled design-728x90   ------------------------>
             <div class="banner">
                 <script type="text/javascript">
-                    var bannersnack_embed = { "hash": "bvcmakt14", "width": 728, "height": 90, "t": 1600083469, "userId": 42390566, "type": "html5" };
+                    var bannersnack_embed = {
+                        "hash": "bvcmakt14",
+                        "width": 728,
+                        "height": 90,
+                        "t": 1600083469,
+                        "userId": 42390566,
+                        "type": "html5"
+                    };
                 </script>
                 <script type="text/javascript" src="//cdn.bannersnack.com/iframe/embed.js"></script>
             </div>
@@ -54,10 +61,9 @@
             </section>
 
             <section class="buttons">
-                <button class="Save-Itinerary">Save Itinerary</button>
+                <button id="mattsSave" class="Save-Itinerary">Save Itinerary</button>
             </section>
 
-            <body>
 
                 <!-- <h2>Featured Parks and Activities</h2> -->
 
@@ -95,7 +101,7 @@
                     <div class="caption-container">
                         <p id="caption"></p> 
                     </div>
-
+                    
                     <div class="row"> 
                         <div class="column">
                             <img class="demo cursor" src="styles/images/pic1.jpg" style="width:100%"
@@ -127,37 +133,42 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <script>
-                    var slideIndex = 1;
-                    showSlides(slideIndex);
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
 
-                    function plusSlides(n) {
-                        showSlides(slideIndex += n);
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    var captionText = document.getElementById("caption");
+                    if (n > slides.length) {
+                        slideIndex = 1
                     }
-
-                    function currentSlide(n) {
-                        showSlides(slideIndex = n);
+                    if (n < 1) {
+                        slideIndex = slides.length
                     }
-
-                    function showSlides(n) {
-                        var i;
-                        var slides = document.getElementsByClassName("mySlides");
-                        var dots = document.getElementsByClassName("demo");
-                        var captionText = document.getElementById("caption");
-                        if (n > slides.length) { slideIndex = 1 }
-                        if (n < 1) { slideIndex = slides.length }
-                        for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";
-                        }
-                        for (i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace(" active", "");
-                        }
-                        slides[slideIndex - 1].style.display = "block";
-                        dots[slideIndex - 1].className += " active";
-                        captionText.innerHTML = dots[slideIndex - 1].alt;
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
                     }
-                    
-                </script>
-                <script type="module" src="./scripts/main.js"></script>
-            </body> -->
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    captionText.innerHTML = dots[slideIndex - 1].alt;
+                }
+            </script>
+
+            <script type="module" src="./scripts/main.js"></script>
+    </body>
